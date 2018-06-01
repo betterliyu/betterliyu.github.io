@@ -2,6 +2,7 @@
 /* #009a61 */
 body.home {
   background: #009a61;
+  transform: translateZ(0);
 }
 
 .header.index .nav.nav-top {
@@ -210,7 +211,7 @@ body.home {
 }
 
 
-.home .main-sction {
+.home>.container {
   background: #009a61;
   height: 800px;
   padding: 0;
