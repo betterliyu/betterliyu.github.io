@@ -352,7 +352,11 @@ var Layout = function () {
     },
     initHeaderScroll: function() {
       function HomePageScrolling() {
-        $(".home #scrollcontent").html($(window).scrollTop());
+        if ($(window).scrollTop() > 0) {
+          $('.home .hero-wrap').addClass('fixed');
+        } else {
+          $('.home .hero-wrap').removeClass('fixed');
+        }
       }
 
 
