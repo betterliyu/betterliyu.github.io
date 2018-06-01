@@ -354,14 +354,13 @@ var Layout = function () {
       function HomePageScrolling() {
         if ($(window).scrollTop() < 0) {
           $('.home .hero-wrap').addClass('down');
+        } else {
+          $('.home .hero-wrap').removeClass('down');
           if ($('.home .main')[0].getBoundingClientRect().top < 0) {
             $('.home .hero-wrap').addClass('hidden');
           } else {
             $('.home .hero-wrap').removeClass('hidden');
           }
-
-        } else {
-          $('.home .hero-wrap').removeClass('down');
         }
       }
 
