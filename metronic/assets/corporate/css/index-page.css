@@ -1,8 +1,8 @@
 /* rgb(0, 154, 97) */
 /* #009a61 */
 body.home {
+  position: relative;
   background: #009a61;
-  transform: translateZ(0);
 }
 
 .header.index .nav.nav-top {
@@ -32,11 +32,14 @@ body.home {
 }
 
 .header .hero-wrap {
-  position: fixed;
+  position: absolute;
   z-index: -10;
   top: 0;
   width: 100vw;
   overflow: hidden;
+}
+.header .hero-wrap.fixed {
+  position: fixed;
 }
 
 .header .hero-img {

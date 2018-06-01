@@ -350,7 +350,19 @@ var Layout = function () {
       $(".quantity-down").html("<i class='fa fa-angle-down'></i>");
       $(".quantity-up").html("<i class='fa fa-angle-up'></i>");
     },
+    initHeaderScroll: function() {
+      function HomePageScrolling() {
+        $(".home #scrollcontent").innerHTML($(window).scrollTop);
+      }
 
+
+
+      HomePageScrolling();
+
+      $(window).scroll(function () {
+        HomePageScrolling();
+      });
+    }
     // initFixHeaderWithPreHeader: function () {
     //   jQuery(window).scroll(function () {
     //     if (jQuery(window).scrollTop() > 37) {
