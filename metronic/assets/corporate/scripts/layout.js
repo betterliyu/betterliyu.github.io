@@ -352,7 +352,7 @@ var Layout = function () {
     },
     initHeaderScroll: function() {
       function HomePageScrolling() {
-        $(".home #scrollcontent").innerHTML($(window).scrollTop);
+        $(".home #scrollcontent").html($(window).scrollTop());
       }
 
 
@@ -362,7 +362,7 @@ var Layout = function () {
       $(window).scroll(function () {
         HomePageScrolling();
       });
-    }
+    },
     // initFixHeaderWithPreHeader: function () {
     //   jQuery(window).scroll(function () {
     //     if (jQuery(window).scrollTop() > 37) {
