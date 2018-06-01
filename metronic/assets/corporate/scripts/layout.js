@@ -350,10 +350,16 @@ var Layout = function () {
       $(".quantity-down").html("<i class='fa fa-angle-down'></i>");
       $(".quantity-up").html("<i class='fa fa-angle-up'></i>");
     },
-    initHeaderScroll: function() {
+    initHeaderScroll: function () {
       function HomePageScrolling() {
         if ($(window).scrollTop() > 0) {
           $('.home .hero-wrap').addClass('fixed');
+          if ($('.home .main')[0].getBoundingClientRect().top < 0) {
+            $('.home .hero-wrap').addClass('hidden');
+          } else {
+            $('.home .hero-wrap').removeClass('hidden');
+          }
+
         } else {
           $('.home .hero-wrap').removeClass('fixed');
         }
