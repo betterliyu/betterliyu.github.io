@@ -1,0 +1,221 @@
+/* rgb(0, 154, 97) */
+/* #009a61 */
+body.home {
+  background: #009a61;
+}
+
+.header.index .nav.nav-top {
+  position: fixed;
+  z-index: -9;
+  top: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.header.index {
+  position: static;
+  margin-bottom: 0;
+  padding-top: calc(32% + 70px);
+  box-shadow: none;
+  background: none;
+  border-radius: 0;
+}
+
+.header .nav.nav-sec {
+  height: 60px;
+  background: white;
+}
+
+.header .nav-list {
+  margin: 0 auto;
+}
+
+.header .hero-wrap {
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.header .hero-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  height: 170px;
+  margin: 0 auto;
+  padding-top: 32%;
+  box-sizing: content-box;
+  background-image: url('../img/laptop-2838921_1280.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header .hero-wrap .hero-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0, 0, 0, .2);
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: calc(10% + 60px);
+}
+
+.header .site-info {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.header .site-info.welcome {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.header .site-info.name {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.header .site-info.name>span {
+  padding: 0 10px;
+  color: white;
+  background: linear-gradient(to right, rgb(60, 179, 113), rgba(60, 179, 113, .5));
+}
+
+@media screen and (min-width: 992px) {
+  .header .site-info.name {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header .site-info.name {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header .site-info.name,
+  .header .site-info.welcome {
+    display: none;
+  }
+  .header .site-info.name {
+    font-size: 30px;
+  }
+  .header .hero-wrap .hero-overlay {
+    padding-top: calc(10% + 100px);
+  }
+}
+
+.header .scroll-shadow {
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(5, 5, 40, 0), rgba(5, 5, 40, .8));
+}
+
+@media only screen and (min-width: 1921px) {
+  .container::after {
+    content: "> 1920";
+  }
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921-min.jpg');
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1920px) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921_1920-min.jpg');
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921-min.jpg');
+  }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1280px) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921_1280-min.jpg');
+  }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921-min.jpg');
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921_1280-min.jpg');
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 960px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921_1920-min.jpg');
+  }
+}
+
+@media only screen and (min-width: 641px) and (-webkit-min-device-pixel-ratio: 3) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921-min.jpg');
+  }
+}
+
+@media only screen and (min-width: 427px) and (max-width: 640px) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921_640-min.jpg');
+  }
+}
+
+@media only screen and (min-width: 427px) and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921_1280-min.jpg');
+  }
+}
+
+@media only screen and (min-width: 427px) and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 3) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921_1920-min.jpg');
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 427px) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921_640-min.jpg');
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 427px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921_1280-min.jpg');
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921_640-min.jpg');
+  }
+}
+
+@media only screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2.5) {
+  .header .hero-img {
+    background-image: url('../img/laptop-2838921_1280-min.jpg');
+  }
+}
+
+
+.home .main-sction {
+  background: #009a61;
+  height: 800px;
+  padding: 0;
+}
+
+.home .footer {
+  background: #009a61;
+}
