@@ -2,12 +2,13 @@
 
 html {
   height: 100%;
+  font-size: 625%;
 }
 
 body {
   position: relative;
   min-height: 100%;
-  padding-bottom: 70px;
+  padding-bottom: .5rem;
 }
 
 .footer {

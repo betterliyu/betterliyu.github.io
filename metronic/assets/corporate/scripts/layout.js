@@ -352,8 +352,8 @@ var Layout = function () {
     },
     initHeaderScroll: function () {
       function HomePageScrolling() {
-        if ($(window).scrollTop() > 0) {
-          $('.home .hero-wrap').addClass('fixed');
+        if ($(window).scrollTop() < 0) {
+          $('.home .hero-wrap').addClass('down');
           if ($('.home .main')[0].getBoundingClientRect().top < 0) {
             $('.home .hero-wrap').addClass('hidden');
           } else {
@@ -361,7 +361,7 @@ var Layout = function () {
           }
 
         } else {
-          $('.home .hero-wrap').removeClass('fixed');
+          $('.home .hero-wrap').removeClass('down');
         }
       }
 
