@@ -23,6 +23,13 @@ body.home {
 
 .nav.pc {
   text-align: center;
+  font-size: 0;
+}
+.nav.pc.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(60, 179, 113);
 }
 .nav.pc .nav-items {
   display: inline-block;
@@ -32,7 +39,8 @@ body.home {
 }
 .nav.pc .nav-item {
   float: left;
-  perspective: 100px;
+  font-size: .16rem;
+  
 }
 .nav.pc .nav-item+.nav-item::before {
   display: inline-block;
@@ -47,6 +55,9 @@ body.home {
   color: white;
   padding: 0 3vw;
   letter-spacing: 2px;
+}
+.nav.pc .nav-item a:hover {
+  text-decoration: none;
 }
 
 
@@ -66,7 +77,7 @@ body.home {
   position: absolute;
 }
 
-.header .hero-wrap.hidden {
+.header .hero-wrap.hide {
   display: none;
 }
 
@@ -78,7 +89,8 @@ body.home {
   margin: 0 auto;
   padding-top: 32%;
   box-sizing: content-box;
-  background-image: url('../img/laptop-2838921_1280.jpg');
+  background-image: url('../img/laptop-2838921_1280-min.jpg');
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -95,7 +107,7 @@ body.home {
 
 .header .site-info  {
   position: absolute;
-  z-index: 1;
+  z-index: -9;
   top: 0;
   width: 100%;
   height: 100vh;
@@ -118,6 +130,8 @@ body.home {
   font-size: 80px;
   font-weight: 600;
 }
+
+
 
 .header .site-info .name>span {
   padding: 0 10px;
@@ -157,7 +171,7 @@ body.home {
     content: "> 1920";
   }
   .header .hero-img {
-    background-image: url('../img/laptop-2838921-min.jpg');
+    background-image: url('../img/laptop-2838921_1920-min.jpg');
   }
 }
 
@@ -169,7 +183,7 @@ body.home {
 
 @media only screen and (min-width: 1281px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .header .hero-img {
-    background-image: url('../img/laptop-2838921-min.jpg');
+    background-image: url('../img/laptop-2838921_1920-min.jpg');
   }
 }
 
@@ -181,7 +195,7 @@ body.home {
 
 @media only screen and (min-width: 961px) and (max-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .header .hero-img {
-    background-image: url('../img/laptop-2838921-min.jpg');
+    background-image: url('../img/laptop-2838921_1920-min.jpg');
   }
 }
 
@@ -199,7 +213,7 @@ body.home {
 
 @media only screen and (min-width: 641px) and (-webkit-min-device-pixel-ratio: 3) {
   .header .hero-img {
-    background-image: url('../img/laptop-2838921-min.jpg');
+    background-image: url('../img/laptop-2838921_1920-min.jpg');
   }
 }
 
@@ -252,5 +266,5 @@ body.home {
 }
 
 .home .footer {
-  background: transparent;
+  background: rgba(60, 179, 113, 1);
 }

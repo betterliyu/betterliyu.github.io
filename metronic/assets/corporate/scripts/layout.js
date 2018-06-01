@@ -357,14 +357,21 @@ var Layout = function () {
         } else {
           $('.home .hero-wrap').removeClass('down');
           if ($('.home .main')[0].getBoundingClientRect().top < 0) {
-            $('.home .hero-wrap').addClass('hidden');
+            $('.home .hero-wrap').addClass('hide');
           } else {
-            $('.home .hero-wrap').removeClass('hidden');
+            $('.home .hero-wrap').removeClass('hide');
           }
+        }
+
+        if ($('.nav.pc')[0].getBoundingClientRect().top <= 0) {
+          $('.nav.pc').addClass('fixed');
+        } else {
+          $('.nav.pc').removeClass('fixed');
         }
       }
 
 
+      var originNameLabelTop = $('.site-info .name')[0].getBoundingClientRect().top + $(window).scrollTop();
 
       HomePageScrolling();
 
