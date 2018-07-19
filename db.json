@@ -1,0 +1,46 @@
+{
+  "works": [
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "percentage": 0.6,
+      "color": "#CE4647"
+    },
+    {
+      "name": "CSS",
+      "percentage": 0.7,
+      "color": "#6C91D7"
+    },
+    {
+      "name": "JavaScript",
+      "percentage": 0.8,
+      "color": "#F5DD1B"
+    },
+    {
+      "name": "AngularJS",
+      "percentage": 0.8,
+      "color": "#CE4647"
+    },
+    {
+      "name": "ReactJS",
+      "percentage": 0.7,
+      "color": "#6C91D7"
+    },
+    {
+      "name": "VueJS",
+      "percentage": 0.5,
+      "color": "#00BB77"
+    },
+    {
+      "name": "Webpack",
+      "percentage": 0.6,
+      "color": "#6C91D7"
+    },
+    {
+      "name": "Gulp",
+      "percentage": 0.6,
+      "color": "#CE4647"
+    }
+  ]
+}
